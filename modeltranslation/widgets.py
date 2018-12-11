@@ -57,7 +57,7 @@ class ClearableWidgetWrapper(Widget):
         """
         return self.widget.media + self.checkbox.media + Media(self.Media)
 
-    def render(self, name, value, attrs=None):
+    def render(self, name, value, attrs=None, renderer=None):
         """
         Appends a checkbox for clearing the value (that is, setting the field
         with the ``empty_value``).
